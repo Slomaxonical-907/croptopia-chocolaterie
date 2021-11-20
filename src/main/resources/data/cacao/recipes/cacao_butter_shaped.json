@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 0 ",
+    " 1 ",
+    "323"
+  ],
+  "key": {
+    "0": {
+      "item": "cacao:cacao_mass_bucket"
+    },
+    "1": {
+      "item": "cacao:all_purpose_filter"
+    },
+    "2": {
+      "item": "croptopia:food_press"
+    },
+  "3": {
+      "item": "minecraft:glass"
+    }
+  },
+  "result": {
+    "item": "cacao:cacao_butter_bottle",
+    "count": 8
+  }
+}
