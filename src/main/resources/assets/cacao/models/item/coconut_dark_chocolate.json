@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "cacao:item/almond_white_chocolate"
+    "layer0": "cacao:item/coconut_dark_chocolate"
   }
 }
