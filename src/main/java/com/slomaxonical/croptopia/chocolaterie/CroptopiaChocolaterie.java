@@ -2,6 +2,7 @@ package com.slomaxonical.croptopia.chocolaterie;
 
 import com.slomaxonical.croptopia.chocolaterie.registry.ItemRegistry;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 
@@ -13,7 +14,7 @@ public class CroptopiaChocolaterie implements ModInitializer {
         return new Identifier("cacao", name);
     }
     public static Item.Settings createGroup() {
-            return new Item.Settings().group(CROPTOPIA_ITEM_GROUP);
+            return new FabricItemSettings().group(CROPTOPIA_ITEM_GROUP);
         }
     @Override
     public void onInitialize() {

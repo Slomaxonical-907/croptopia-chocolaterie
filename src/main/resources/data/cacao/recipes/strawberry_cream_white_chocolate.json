@@ -5,10 +5,10 @@
       "item": "cacao:silicon_mold"
     },
     {
-      "item": "cacao:cacao_mass_bottle"
+      "item": "cacao:cacao_butter_bottle"
     },
     {
-      "item": "cacao:cacao_mass_bottle"
+      "item": "cacao:cacao_butter_bottle"
     },
     {
       "item": "croptopia:milk_bottle"
@@ -27,7 +27,7 @@
     }
   ],
   "result": {
-    "item": "cacao:strawberry_cream_milk_chocolate",
+    "item": "cacao:strawberry_cream_white_chocolate",
     "count": 1
   }
 }

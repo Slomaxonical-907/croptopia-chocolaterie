@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "cacao:cacao_nibs"
+    },
+    {
+      "item": "minecraft:butter"
+    },
+    {
+      "item": "croptopia:milk_bottle"
+    },
+    {
+      "item": "croptopia:mortar_and_pestle"
+    }
+
+  ],
+  "result": {
+    "item": "croptopia:chocolate",
+    "count": 1
+  }
+}

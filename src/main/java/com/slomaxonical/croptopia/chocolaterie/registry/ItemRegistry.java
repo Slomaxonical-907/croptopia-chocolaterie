@@ -2,12 +2,15 @@ package com.slomaxonical.croptopia.chocolaterie.registry;
 
 import com.slomaxonical.croptopia.chocolaterie.CroptopiaChocolaterie;
 import me.thonk.croptopia.items.CookingUtensil;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.util.registry.Registry;
 
 import static me.thonk.croptopia.registry.FoodRegistry.*;
+//import static me.thonk.croptopia.Croptopia.createGroup;
 import static com.slomaxonical.croptopia.chocolaterie.CroptopiaChocolaterie.createGroup;
 
 public class ItemRegistry {
@@ -52,7 +55,14 @@ public class ItemRegistry {
     public static final Item COCONUT_WHITE_CHOCOLATE = new Item(createGroup().food(EDIBLE_7));
     public static final Item PEANUT_BUTTER_WHITE_CHOCOLATE = new Item(createGroup().food(EDIBLE_7));
 
-    public static final Item GOLDEN_CHOCOLATE = new Item(createGroup().food(new FoodComponent.Builder().hunger(10).saturationModifier(0.8f).alwaysEdible().build()));
+    public static final Item GOLDEN_CHOCOLATE = new Item(createGroup().food(new FoodComponent.Builder()
+            .hunger(7).
+            saturationModifier(0.6f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 2400, 1), 1.0f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 1200, 2), 0.7f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 100, 2), 0.7f)
+            .alwaysEdible()
+            .build()));
     public static final Item DARK_CHOCOLATE_DIPPED_APPLE = new Item(createGroup().food(EDIBLE_7));
     public static final Item MILK_CHOCOLATE_DIPPED_APPLE = new Item(createGroup().food(EDIBLE_7));
     public static final Item WHITE_CHOCOLATE_DIPPED_APPLE = new Item(createGroup().food(EDIBLE_7));

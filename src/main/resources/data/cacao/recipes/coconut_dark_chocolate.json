@@ -11,23 +11,20 @@
       "item": "cacao:cacao_mass_bottle"
     },
     {
-      "item": "croptopia:milk_bottle"
+      "item": "cacao:cacao_mass_bottle"
     },
     {
-      "item": "croptopia:milk_bottle"
+      "item": "cacao:cacao_mass_bottle"
     },
     {
       "item": "minecraft:sugar"
     },
     {
-      "item": "croptopia:strawberry"
-    },
-    {
-      "tag": "c:milks"
+      "item": "croptopia:coconut"
     }
   ],
   "result": {
-    "item": "cacao:strawberry_cream_milk_chocolate",
+    "item": "cacao:coconut_dark_chocolate",
     "count": 1
   }
 }

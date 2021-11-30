@@ -20,14 +20,11 @@
       "item": "minecraft:sugar"
     },
     {
-      "item": "croptopia:strawberry"
-    },
-    {
-      "tag": "c:milks"
+      "item": "croptopia:coconut"
     }
   ],
   "result": {
-    "item": "cacao:strawberry_cream_milk_chocolate",
+    "item": "cacao:coconut_milk_chocolate",
     "count": 1
   }
 }

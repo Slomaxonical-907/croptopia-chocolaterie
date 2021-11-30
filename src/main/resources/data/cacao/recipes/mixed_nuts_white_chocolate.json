@@ -5,10 +5,10 @@
       "item": "cacao:silicon_mold"
     },
     {
-      "item": "cacao:cacao_mass_bottle"
+      "item": "cacao:cacao_butter_bottle"
     },
     {
-      "item": "cacao:cacao_mass_bottle"
+      "item": "cacao:cacao_butter_bottle"
     },
     {
       "item": "croptopia:milk_bottle"
@@ -20,14 +20,17 @@
       "item": "minecraft:sugar"
     },
     {
-      "item": "croptopia:strawberry"
+      "item": "croptopia:almond"
     },
     {
-      "tag": "c:milks"
+      "item": "croptopia:pecan"
+    },
+    {
+      "item": "croptopia:walnut"
     }
   ],
   "result": {
-    "item": "cacao:strawberry_cream_milk_chocolate",
+    "item": "cacao:mixed_nuts_white_chocolate",
     "count": 1
   }
 }
