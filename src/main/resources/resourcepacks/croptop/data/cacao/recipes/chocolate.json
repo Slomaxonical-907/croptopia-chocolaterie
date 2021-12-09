@@ -5,7 +5,7 @@
       "item": "cacao:cacao_nibs"
     },
     {
-      "item": "minecraft:butter"
+      "item": "croptopia:butter"
     },
     {
       "item": "croptopia:milk_bottle"
@@ -13,10 +13,9 @@
     {
       "item": "croptopia:mortar_and_pestle"
     }
-
   ],
   "result": {
-    "item": "croptopia:chocolate",
-    "count": 1
+    "item": "minecraft:apple",
+    "count": 2
   }
 }
