@@ -69,6 +69,7 @@ public class ItemRegistry {
     public static final Item DARK_CHOCOLATE_COVERED_APPLE = new Item(createGroup().food(FoodRegistry.EDIBLE_5));
     public static final Item MILK_CHOCOLATE_COVERED_APPLE = new Item(createGroup().food(FoodRegistry.EDIBLE_7));
     public static final Item WHITE_CHOCOLATE_COVERED_APPLE = new Item(createGroup().food(FoodRegistry.EDIBLE_7));
+    public static final Item NUTELLA = new Item(createGroup().food(FoodRegistry.EDIBLE_9));
 
     public static void init(){
         registerItem("cacao_nibs", CACAO_NIBS);
@@ -113,6 +114,7 @@ public class ItemRegistry {
         registerItem("dark_chocolate_covered_apple", DARK_CHOCOLATE_COVERED_APPLE);
         registerItem("milk_chocolate_covered_apple", MILK_CHOCOLATE_COVERED_APPLE);
         registerItem("white_chocolate_covered_apple", WHITE_CHOCOLATE_COVERED_APPLE);
+        registerItem("nutella", NUTELLA);
     }
 
     private static Item registerItem(String itemName, Item item) {
