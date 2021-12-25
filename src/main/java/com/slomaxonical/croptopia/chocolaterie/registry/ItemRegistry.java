@@ -23,7 +23,7 @@ public class ItemRegistry {
     public static final Item CACAO_MASS_BOTTLE = new Item(createGroup());
     public static final Item CACAO_BUTTER_BOTTLE = new Item(createGroup());
 //    public static final Item COCOA_POWDER = new Item(createGroup());
-//    public static Item pressedCocoaCone = new Item(CroptopiaChocolaterie.createGroup());
+//    public static Item pressedCocoaCone = new Item(createGroup());
 
     public static final Item SILICON_DUST = new Item(createGroup());
     public static final CookingUtensil SILICON_MOLD = new CookingUtensil(createGroup().maxCount(1));
@@ -31,26 +31,26 @@ public class ItemRegistry {
     public static final CookingUtensil MANUAL_FOOD_GRINDER = new CookingUtensil(createGroup().maxCount(1));
     //    public static Item massFilledCloth = new Item(createGroup().maxCount(1).recipeRemainder(pressedCocoaCone));
 
-    public static final Item DARK_CHOCOLATE = new Item(createGroup().food(FoodRegistry.EDIBLE_7));
-    public static final Item CARAMEL_DARK_CHOCOLATE = new Item(createGroup().food(FoodRegistry.EDIBLE_7));
-    public static final Item PRALINE_DARK_CHOCOLATE = new Item(createGroup().food(FoodRegistry.EDIBLE_7));
-    public static final Item STRAWBERRY_CREAM_DARK_CHOCOLATE = new Item(createGroup().food(FoodRegistry.EDIBLE_7));
-    public static final Item COOKIE_CREAM_DARK_CHOCOLATE = new Item(createGroup().food(FoodRegistry.EDIBLE_7));
-    public static final Item MIXED_NUTS_DARK_CHOCOLATE = new Item(createGroup().food(FoodRegistry.EDIBLE_7));
-    public static final Item COCONUT_DARK_CHOCOLATE = new Item(createGroup().food(FoodRegistry.EDIBLE_7));
-    public static final Item PEANUT_BUTTER_DARK_CHOCOLATE = new Item(createGroup().food(FoodRegistry.EDIBLE_7));
+    public static final Item DARK_CHOCOLATE = new Item(createGroup().food(FoodRegistry.EDIBLE_3));
+    public static final Item CARAMEL_DARK_CHOCOLATE = new Item(createGroup().food(FoodRegistry.EDIBLE_5));
+    public static final Item PRALINE_DARK_CHOCOLATE = new Item(createGroup().food(FoodRegistry.EDIBLE_3));
+    public static final Item STRAWBERRY_CREAM_DARK_CHOCOLATE = new Item(createGroup().food(FoodRegistry.EDIBLE_3));
+    public static final Item COOKIE_CREAM_DARK_CHOCOLATE = new Item(createGroup().food(FoodRegistry.EDIBLE_3));
+    public static final Item MIXED_NUTS_DARK_CHOCOLATE = new Item(createGroup().food(FoodRegistry.EDIBLE_3));
+    public static final Item COCONUT_DARK_CHOCOLATE = new Item(createGroup().food(FoodRegistry.EDIBLE_3));
+    public static final Item PEANUT_BUTTER_DARK_CHOCOLATE = new Item(createGroup().food(FoodRegistry.EDIBLE_3));
 
-    public static final Item MILK_CHOCOLATE = new Item(createGroup().food(FoodRegistry.EDIBLE_7));
+    public static final Item MILK_CHOCOLATE = new Item(createGroup().food(FoodRegistry.EDIBLE_5));
     public static final Item CARAMEL_MILK_CHOCOLATE = new Item(createGroup().food(FoodRegistry.EDIBLE_7));
-    public static final Item PRALINE_MILK_CHOCOLATE = new Item(createGroup().food(FoodRegistry.EDIBLE_7));
-    public static final Item STRAWBERRY_CREAM_MILK_CHOCOLATE = new Item(createGroup().food(FoodRegistry.EDIBLE_7));
-    public static final Item COOKIE_CREAM_MILK_CHOCOLATE = new Item(createGroup().food(FoodRegistry.EDIBLE_7));
-    public static final Item MIXED_NUTS_MILK_CHOCOLATE = new Item(createGroup().food(FoodRegistry.EDIBLE_7));
-    public static final Item COCONUT_MILK_CHOCOLATE = new Item(createGroup().food(FoodRegistry.EDIBLE_7));
-    public static final Item PEANUT_BUTTER_MILK_CHOCOLATE = new Item(createGroup().food(FoodRegistry.EDIBLE_7));
+    public static final Item PRALINE_MILK_CHOCOLATE = new Item(createGroup().food(FoodRegistry.EDIBLE_5));
+    public static final Item STRAWBERRY_CREAM_MILK_CHOCOLATE = new Item(createGroup().food(FoodRegistry.EDIBLE_5));
+    public static final Item COOKIE_CREAM_MILK_CHOCOLATE = new Item(createGroup().food(FoodRegistry.EDIBLE_5));
+    public static final Item MIXED_NUTS_MILK_CHOCOLATE = new Item(createGroup().food(FoodRegistry.EDIBLE_5));
+    public static final Item COCONUT_MILK_CHOCOLATE = new Item(createGroup().food(FoodRegistry.EDIBLE_5));
+    public static final Item PEANUT_BUTTER_MILK_CHOCOLATE = new Item(createGroup().food(FoodRegistry.EDIBLE_5));
 
     public static final Item WHITE_CHOCOLATE = new Item(createGroup().food(FoodRegistry.EDIBLE_7));
-    public static final Item CARAMEL_WHITE_CHOCOLATE = new Item(createGroup().food(FoodRegistry.EDIBLE_7));
+    public static final Item CARAMEL_WHITE_CHOCOLATE = new Item(createGroup().food(FoodRegistry.EDIBLE_9));
     public static final Item PRALINE_WHITE_CHOCOLATE = new Item(createGroup().food(FoodRegistry.EDIBLE_7));
     public static final Item STRAWBERRY_CREAM_WHITE_CHOCOLATE = new Item(createGroup().food(FoodRegistry.EDIBLE_7));
     public static final Item COOKIE_CREAM_WHITE_CHOCOLATE = new Item(createGroup().food(FoodRegistry.EDIBLE_7));
@@ -59,14 +59,14 @@ public class ItemRegistry {
     public static final Item PEANUT_BUTTER_WHITE_CHOCOLATE = new Item(createGroup().food(FoodRegistry.EDIBLE_7));
 
     public static final Item GOLDEN_CHOCOLATE = new Item(createGroup().food(new FoodComponent.Builder()
-            .hunger(7).
-            saturationModifier(0.6f)
-            .statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 2400, 1), 1.0f)
-            .statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 1200, 2), 0.7f)
-            .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 100, 2), 0.7f)
+            .hunger(5).
+            saturationModifier(0.75f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 400, 1), 1.0f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 1200, 1), 0.65f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 120, 2), 0.8f)
             .alwaysEdible()
             .build()));
-    public static final Item DARK_CHOCOLATE_COVERED_APPLE = new Item(createGroup().food(FoodRegistry.EDIBLE_7));
+    public static final Item DARK_CHOCOLATE_COVERED_APPLE = new Item(createGroup().food(FoodRegistry.EDIBLE_5));
     public static final Item MILK_CHOCOLATE_COVERED_APPLE = new Item(createGroup().food(FoodRegistry.EDIBLE_7));
     public static final Item WHITE_CHOCOLATE_COVERED_APPLE = new Item(createGroup().food(FoodRegistry.EDIBLE_7));
 
