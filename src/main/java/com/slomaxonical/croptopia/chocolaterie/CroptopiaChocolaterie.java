@@ -16,17 +16,18 @@ import net.minecraft.util.Identifier;
 public class CroptopiaChocolaterie implements ModInitializer {
 
     public static String MOD_ID = "cacao";
-    public static final ItemGroup COCOA_ITEM_GROUP = FabricItemGroupBuilder.create(new Identifier(MOD_ID, "croptopia"))
+    public static final ItemGroup CACAO_ITEM_GROUP = FabricItemGroupBuilder.create(new Identifier(MOD_ID, "choco_add_on"))
             .icon(() -> new ItemStack(ItemRegistry.MILK_CHOCOLATE))
             .build();
     public static Identifier createIdentifier(String name) {
         return new Identifier(MOD_ID, name);
     }
     public static Item.Settings createGroup() {
-            return new FabricItemSettings().group(COCOA_ITEM_GROUP);
+            return new FabricItemSettings().group(CACAO_ITEM_GROUP);
         }
-    static final String CROPTOPIA_MOD_ID = "croptopia";
 
+    private static final String CROPTOPIA_MOD_ID = "croptopia";
+//  cacao is my mod's ID
     @Override
     public void onInitialize() {
         FabricLoader.getInstance().getModContainer(CROPTOPIA_MOD_ID)

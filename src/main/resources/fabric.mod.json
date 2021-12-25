@@ -30,6 +30,6 @@
     "fabric": "*",
     "minecraft": "1.17.x",
     "java": ">=16",
-    "croptopia": ">=1.6.2"
+    "croptopia": ">=1.6.3"
   }
 }

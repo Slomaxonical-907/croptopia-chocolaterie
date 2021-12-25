@@ -8,54 +8,56 @@ import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.util.registry.Registry;
+import me.thonk.croptopia.Croptopia;
+import me.thonk.croptopia.registry.FoodRegistry;
 
-import static me.thonk.croptopia.registry.FoodRegistry.*;
+//import static me.thonk.croptopia.registry.FoodRegistry.*;
 //import static me.thonk.croptopia.Croptopia.createGroup;
-import static com.slomaxonical.croptopia.chocolaterie.CroptopiaChocolaterie.createGroup;
+//import static com.slomaxonical.croptopia.chocolaterie.CroptopiaChocolaterie.createGroup;
 
 public class ItemRegistry {
 
-    public static final Item CACAO_NIBS = new Item(createGroup());
-    public static final Item CACAO_MASS_BUCKET = new Item(createGroup().recipeRemainder(Items.BUCKET));
-    public static final Item CACAO_MASS_BOTTLE = new Item(createGroup());
-    public static final Item CACAO_BUTTER_BOTTLE = new Item(createGroup());
-    public static final Item COCOA_POWDER = new Item(createGroup());
-//    public static Item pressedCocoaCone = new Item(CroptopiaChocolaterie.createGroup());
+    public static final Item CACAO_NIBS = new Item(Croptopia.createGroup());
+    public static final Item CACAO_MASS_BUCKET = new Item(Croptopia.createGroup().recipeRemainder(Items.BUCKET));
+    public static final Item CACAO_MASS_BOTTLE = new Item(Croptopia.createGroup());
+    public static final Item CACAO_BUTTER_BOTTLE = new Item(Croptopia.createGroup());
+//    public static final Item COCOA_POWDER = new Item(Croptopia.createGroup());
+//    public static Item pressedCocoaCone = new Item(CroptopiaChocolaterie.Croptopia.createGroup());
 
-    public static final Item SILICON_DUST = new Item(createGroup());
-    public static final CookingUtensil SILICON_MOLD = new CookingUtensil(createGroup().maxCount(1));
-    public static final CookingUtensil ALL_PURPOSE_FILTER = new CookingUtensil(createGroup().maxCount(1));
-    public static final CookingUtensil MANUAL_FOOD_GRINDER = new CookingUtensil(createGroup().maxCount(1));
-    //    public static Item massFilledCloth = new Item(createGroup().maxCount(1).recipeRemainder(pressedCocoaCone));
+    public static final Item SILICON_DUST = new Item(Croptopia.createGroup());
+    public static final CookingUtensil SILICON_MOLD = new CookingUtensil(Croptopia.createGroup().maxCount(1));
+    public static final CookingUtensil ALL_PURPOSE_FILTER = new CookingUtensil(Croptopia.createGroup().maxCount(1));
+    public static final CookingUtensil MANUAL_FOOD_GRINDER = new CookingUtensil(Croptopia.createGroup().maxCount(1));
+    //    public static Item massFilledCloth = new Item(Croptopia.createGroup().maxCount(1).recipeRemainder(pressedCocoaCone));
 
-    public static final Item DARK_CHOCOLATE = new Item(createGroup().food(EDIBLE_7));
-    public static final Item CARAMEL_DARK_CHOCOLATE = new Item(createGroup().food(EDIBLE_7));
-    public static final Item PRALINE_DARK_CHOCOLATE = new Item(createGroup().food(EDIBLE_7));
-    public static final Item STRAWBERRY_CREAM_DARK_CHOCOLATE = new Item(createGroup().food(EDIBLE_7));
-    public static final Item COOKIE_CREAM_DARK_CHOCOLATE = new Item(createGroup().food(EDIBLE_7));
-    public static final Item MIXED_NUTS_DARK_CHOCOLATE = new Item(createGroup().food(EDIBLE_7));
-    public static final Item COCONUT_DARK_CHOCOLATE = new Item(createGroup().food(EDIBLE_7));
-    public static final Item PEANUT_BUTTER_DARK_CHOCOLATE = new Item(createGroup().food(EDIBLE_7));
+    public static final Item DARK_CHOCOLATE = new Item(Croptopia.createGroup().food(FoodRegistry.EDIBLE_7));
+    public static final Item CARAMEL_DARK_CHOCOLATE = new Item(Croptopia.createGroup().food(FoodRegistry.EDIBLE_7));
+    public static final Item PRALINE_DARK_CHOCOLATE = new Item(Croptopia.createGroup().food(FoodRegistry.EDIBLE_7));
+    public static final Item STRAWBERRY_CREAM_DARK_CHOCOLATE = new Item(Croptopia.createGroup().food(FoodRegistry.EDIBLE_7));
+    public static final Item COOKIE_CREAM_DARK_CHOCOLATE = new Item(Croptopia.createGroup().food(FoodRegistry.EDIBLE_7));
+    public static final Item MIXED_NUTS_DARK_CHOCOLATE = new Item(Croptopia.createGroup().food(FoodRegistry.EDIBLE_7));
+    public static final Item COCONUT_DARK_CHOCOLATE = new Item(Croptopia.createGroup().food(FoodRegistry.EDIBLE_7));
+    public static final Item PEANUT_BUTTER_DARK_CHOCOLATE = new Item(Croptopia.createGroup().food(FoodRegistry.EDIBLE_7));
 
-    public static final Item MILK_CHOCOLATE = new Item(createGroup().food(EDIBLE_7));
-    public static final Item CARAMEL_MILK_CHOCOLATE = new Item(createGroup().food(EDIBLE_7));
-    public static final Item PRALINE_MILK_CHOCOLATE = new Item(createGroup().food(EDIBLE_7));
-    public static final Item STRAWBERRY_CREAM_MILK_CHOCOLATE = new Item(createGroup().food(EDIBLE_7));
-    public static final Item COOKIE_CREAM_MILK_CHOCOLATE = new Item(createGroup().food(EDIBLE_7));
-    public static final Item MIXED_NUTS_MILK_CHOCOLATE = new Item(createGroup().food(EDIBLE_7));
-    public static final Item COCONUT_MILK_CHOCOLATE = new Item(createGroup().food(EDIBLE_7));
-    public static final Item PEANUT_BUTTER_MILK_CHOCOLATE = new Item(createGroup().food(EDIBLE_7));
+    public static final Item MILK_CHOCOLATE = new Item(Croptopia.createGroup().food(FoodRegistry.EDIBLE_7));
+    public static final Item CARAMEL_MILK_CHOCOLATE = new Item(Croptopia.createGroup().food(FoodRegistry.EDIBLE_7));
+    public static final Item PRALINE_MILK_CHOCOLATE = new Item(Croptopia.createGroup().food(FoodRegistry.EDIBLE_7));
+    public static final Item STRAWBERRY_CREAM_MILK_CHOCOLATE = new Item(Croptopia.createGroup().food(FoodRegistry.EDIBLE_7));
+    public static final Item COOKIE_CREAM_MILK_CHOCOLATE = new Item(Croptopia.createGroup().food(FoodRegistry.EDIBLE_7));
+    public static final Item MIXED_NUTS_MILK_CHOCOLATE = new Item(Croptopia.createGroup().food(FoodRegistry.EDIBLE_7));
+    public static final Item COCONUT_MILK_CHOCOLATE = new Item(Croptopia.createGroup().food(FoodRegistry.EDIBLE_7));
+    public static final Item PEANUT_BUTTER_MILK_CHOCOLATE = new Item(Croptopia.createGroup().food(FoodRegistry.EDIBLE_7));
 
-    public static final Item WHITE_CHOCOLATE = new Item(createGroup().food(EDIBLE_7));
-    public static final Item CARAMEL_WHITE_CHOCOLATE = new Item(createGroup().food(EDIBLE_7));
-    public static final Item PRALINE_WHITE_CHOCOLATE = new Item(createGroup().food(EDIBLE_7));
-    public static final Item STRAWBERRY_CREAM_WHITE_CHOCOLATE = new Item(createGroup().food(EDIBLE_7));
-    public static final Item COOKIE_CREAM_WHITE_CHOCOLATE = new Item(createGroup().food(EDIBLE_7));
-    public static final Item MIXED_NUTS_WHITE_CHOCOLATE = new Item(createGroup().food(EDIBLE_7));
-    public static final Item COCONUT_WHITE_CHOCOLATE = new Item(createGroup().food(EDIBLE_7));
-    public static final Item PEANUT_BUTTER_WHITE_CHOCOLATE = new Item(createGroup().food(EDIBLE_7));
+    public static final Item WHITE_CHOCOLATE = new Item(Croptopia.createGroup().food(FoodRegistry.EDIBLE_7));
+    public static final Item CARAMEL_WHITE_CHOCOLATE = new Item(Croptopia.createGroup().food(FoodRegistry.EDIBLE_7));
+    public static final Item PRALINE_WHITE_CHOCOLATE = new Item(Croptopia.createGroup().food(FoodRegistry.EDIBLE_7));
+    public static final Item STRAWBERRY_CREAM_WHITE_CHOCOLATE = new Item(Croptopia.createGroup().food(FoodRegistry.EDIBLE_7));
+    public static final Item COOKIE_CREAM_WHITE_CHOCOLATE = new Item(Croptopia.createGroup().food(FoodRegistry.EDIBLE_7));
+    public static final Item MIXED_NUTS_WHITE_CHOCOLATE = new Item(Croptopia.createGroup().food(FoodRegistry.EDIBLE_7));
+    public static final Item COCONUT_WHITE_CHOCOLATE = new Item(Croptopia.createGroup().food(FoodRegistry.EDIBLE_7));
+    public static final Item PEANUT_BUTTER_WHITE_CHOCOLATE = new Item(Croptopia.createGroup().food(FoodRegistry.EDIBLE_7));
 
-    public static final Item GOLDEN_CHOCOLATE = new Item(createGroup().food(new FoodComponent.Builder()
+    public static final Item GOLDEN_CHOCOLATE = new Item(Croptopia.createGroup().food(new FoodComponent.Builder()
             .hunger(7).
             saturationModifier(0.6f)
             .statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 2400, 1), 1.0f)
@@ -63,16 +65,16 @@ public class ItemRegistry {
             .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 100, 2), 0.7f)
             .alwaysEdible()
             .build()));
-    public static final Item DARK_CHOCOLATE_DIPPED_APPLE = new Item(createGroup().food(EDIBLE_7));
-    public static final Item MILK_CHOCOLATE_DIPPED_APPLE = new Item(createGroup().food(EDIBLE_7));
-    public static final Item WHITE_CHOCOLATE_DIPPED_APPLE = new Item(createGroup().food(EDIBLE_7));
+    public static final Item DARK_CHOCOLATE_COVERED_APPLE = new Item(Croptopia.createGroup().food(FoodRegistry.EDIBLE_7));
+    public static final Item MILK_CHOCOLATE_COVERED_APPLE = new Item(Croptopia.createGroup().food(FoodRegistry.EDIBLE_7));
+    public static final Item WHITE_CHOCOLATE_COVERED_APPLE = new Item(Croptopia.createGroup().food(FoodRegistry.EDIBLE_7));
 
     public static void init(){
         registerItem("cacao_nibs", CACAO_NIBS);
         registerItem("cacao_mass_bucket", CACAO_MASS_BUCKET);
         registerItem("cacao_mass_bottle", CACAO_MASS_BOTTLE);
         registerItem("cacao_butter_bottle", CACAO_BUTTER_BOTTLE);
-        registerItem("cocoa_powder", COCOA_POWDER);
+//        registerItem("cocoa_powder", COCOA_POWDER);
 //        registerItem("pressed_cocoa_cone",pressedCocoaCone);
         registerItem("silicon_dust", SILICON_DUST);
         registerItem("silicon_mold", SILICON_MOLD);
@@ -107,9 +109,9 @@ public class ItemRegistry {
         registerItem("peanut_butter_white_chocolate", PEANUT_BUTTER_WHITE_CHOCOLATE);
 
         registerItem("golden_chocolate", GOLDEN_CHOCOLATE);
-        registerItem("dark_chocolate_dipped_apple", DARK_CHOCOLATE_DIPPED_APPLE);
-        registerItem("milk_chocolate_dipped_apple", MILK_CHOCOLATE_DIPPED_APPLE);
-        registerItem("white_chocolate_dipped_apple", WHITE_CHOCOLATE_DIPPED_APPLE);
+        registerItem("dark_chocolate_covered_apple", DARK_CHOCOLATE_COVERED_APPLE);
+        registerItem("milk_chocolate_covered_apple", MILK_CHOCOLATE_COVERED_APPLE);
+        registerItem("white_chocolate_covered_apple", WHITE_CHOCOLATE_COVERED_APPLE);
     }
 
     private static Item registerItem(String itemName, Item item) {

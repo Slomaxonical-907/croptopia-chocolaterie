@@ -33,7 +33,8 @@
   "item.cacao.coconut_white_chocolate" : "Coconut White Chocolate",
   "item.cacao.peanut_butter_white_chocolate" : "Peanut Butter White Chocolate",
   "item.cacao.golden_chocolate" : "Golden Chocolate",
-  "item.cacao.dark_chocolate_dipped_apple" : "Dark Chocolate Dipped Apple",
-  "item.cacao.milk_chocolate_dipped_apple" : "Milk Chocolate Dipped Apple",
-  "item.cacao.white_chocolate_dipped_apple" : "White Chocolate Dipped Apple"
+  "item.cacao.dark_chocolate_covered_apple" : "Dark Chocolate Covered Apple",
+  "item.cacao.milk_chocolate_covered_apple" : "Milk Chocolate Covered Apple",
+  "item.cacao.white_chocolate_covered_apple" : "White Chocolate Covered Apple",
+  "itemGroup.cacao.choco_add_on" : "Croptopia's Chocclaterie"
 }
