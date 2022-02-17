@@ -10,10 +10,10 @@
   ],
   "contact": {
     "homepage": "",
-    "sources": ""
+    "sources": "https://github.com/Slomaxonical-907/croptopia-chocolaterie"
   },
 
-  "license": "GPL-3",
+  "license": "LGPL-3",
   "icon": "assets/cacao/icon.png",
 
   "environment": "*",
@@ -23,7 +23,7 @@
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "cacao.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.12.12",

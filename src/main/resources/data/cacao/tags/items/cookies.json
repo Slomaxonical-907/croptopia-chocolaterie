@@ -3,6 +3,9 @@
   "values": [
     "minecraft:cookie",
     "croptopia:nutty_cookie",
-    "croptopia:raisin_oatmeal_cookie"
+    "croptopia:raisin_oatmeal_cookie",
+    "cacao:white_chips_cookie",
+    "cacao:white_chips_chocolate_cookie",
+    "cacao:dark_chips_chocolate_cookie"
   ]
 }

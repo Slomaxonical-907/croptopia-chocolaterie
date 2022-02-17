@@ -6,7 +6,9 @@
   "item.cacao.cocoa_powder" : "Cocoa Powder",
   "item.cacao.silicon_dust" : "Silicon Dust",
   "item.cacao.silicon_mold" : "Silicon Mold",
-  "item.cacao.all_purpose_filter" : "All Purpose Filter",
+  "item.cacao.filter_cloth" : "Filter Cloth",
+  "item.cacao.cacao_mass_filled_cloth" : "Cacao Mass Filled Cloth",
+  "item.cacao.pressed_cocoa_cone": "Pressed Cocoa Cone",
   "item.cacao.manual_food_grinder" : "Manual Food Grinder",
   "item.cacao.dark_chocolate" : "Dark Chocolate",
   "item.cacao.caramel_dark_chocolate" : "Caramel Dark Chocolate",
@@ -36,7 +38,11 @@
   "item.cacao.dark_chocolate_covered_apple" : "Dark Chocolate Covered Apple",
   "item.cacao.milk_chocolate_covered_apple" : "Milk Chocolate Covered Apple",
   "item.cacao.white_chocolate_covered_apple" : "White Chocolate Covered Apple",
+  "item.cacao.white_chips_cookie" : "White Chips Cookie",
+  "item.cacao.white_chips_chocolate_cookie" : "White Chips Chocolate Cookie",
+  "item.cacao.dark_chips_chocolate_cookie" : "Dark Chips Chocolate Cookie",
   "item.cacao.nutella" : "Nutella",
 
-  "itemGroup.cacao.choco_add_on" : "Croptopia's Chocclaterie"
+  "block.cacao.chocolate_cake" : "Chocolate Cake",
+  "itemGroup.cacao.item_group" : "Croptopia's Chocclaterie"
 }

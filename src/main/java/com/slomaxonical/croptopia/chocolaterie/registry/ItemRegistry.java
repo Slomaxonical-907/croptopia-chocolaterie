@@ -2,6 +2,7 @@ package com.slomaxonical.croptopia.chocolaterie.registry;
 
 import com.slomaxonical.croptopia.chocolaterie.CroptopiaChocolaterie;
 import me.thonk.croptopia.items.CookingUtensil;
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.FoodComponent;
@@ -14,22 +15,20 @@ import me.thonk.croptopia.registry.FoodRegistry;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.slomaxonical.croptopia.chocolaterie.CroptopiaChocolaterie.createGroup;
-
 public class ItemRegistry {
 
     public static final Item CACAO_NIBS = new Item(createGroup());
     public static final Item CACAO_MASS_BUCKET = new Item(createGroup().recipeRemainder(Items.BUCKET));
     public static final Item CACAO_MASS_BOTTLE = new Item(createGroup());
     public static final Item CACAO_BUTTER_BOTTLE = new Item(createGroup());
-//    public static final Item COCOA_POWDER = new Item(createGroup());
-//    public static Item pressedCocoaCone = new Item(createGroup());
 
     public static final Item SILICON_DUST = new Item(createGroup());
     public static final CookingUtensil SILICON_MOLD = new CookingUtensil(createGroup().maxCount(1));
-    public static final CookingUtensil ALL_PURPOSE_FILTER = new CookingUtensil(createGroup().maxCount(1));
     public static final CookingUtensil MANUAL_FOOD_GRINDER = new CookingUtensil(createGroup().maxCount(1));
-    //    public static Item massFilledCloth = new Item(createGroup().maxCount(1).recipeRemainder(pressedCocoaCone));
+    public static final Item FILTER_CLOTH = new Item(createGroup());
+    public static final Item PRESSED_COCOA_CONE = new Item(createGroup());
+    public static final Item CACAO_MASS_FILLED_CLOTH = new Item(createGroup().maxCount(1).recipeRemainder(PRESSED_COCOA_CONE));
+    public static final Item COCOA_POWDER = new Item(createGroup());
 
     public static final Item DARK_CHOCOLATE = new Item(createGroup().food(FoodRegistry.EDIBLE_3));
     public static final Item CARAMEL_DARK_CHOCOLATE = new Item(createGroup().food(FoodRegistry.EDIBLE_5));
@@ -69,18 +68,26 @@ public class ItemRegistry {
     public static final Item DARK_CHOCOLATE_COVERED_APPLE = new Item(createGroup().food(FoodRegistry.EDIBLE_5));
     public static final Item MILK_CHOCOLATE_COVERED_APPLE = new Item(createGroup().food(FoodRegistry.EDIBLE_7));
     public static final Item WHITE_CHOCOLATE_COVERED_APPLE = new Item(createGroup().food(FoodRegistry.EDIBLE_7));
+    public static final Item WHITE_CHIPS_COOKIE = new Item(createGroup().food(FoodRegistry.EDIBLE_5));
+    public static final Item WHITE_CHIPS_CHOCOLATE_COOKIE = new Item(createGroup().food(FoodRegistry.EDIBLE_5));
+    public static final Item DARK_CHIPS_CHOCOLATE_COOKIE = new Item(createGroup().food(FoodRegistry.EDIBLE_5));
     public static final Item NUTELLA = new Item(createGroup().food(FoodRegistry.EDIBLE_9));
 
+    public static Item.Settings createGroup() {
+        return new FabricItemSettings().group(CroptopiaChocolaterie.CACAO_ITEM_GROUP);
+    }
     public static void init(){
         registerItem("cacao_nibs", CACAO_NIBS);
         registerItem("cacao_mass_bucket", CACAO_MASS_BUCKET);
         registerItem("cacao_mass_bottle", CACAO_MASS_BOTTLE);
         registerItem("cacao_butter_bottle", CACAO_BUTTER_BOTTLE);
-//        registerItem("cocoa_powder", COCOA_POWDER);
-//        registerItem("pressed_cocoa_cone",pressedCocoaCone);
+        registerItem("filter_cloth", FILTER_CLOTH);
+        registerItem("cacao_mass_filled_cloth", CACAO_MASS_FILLED_CLOTH);
+        registerItem("pressed_cocoa_cone",PRESSED_COCOA_CONE);
+        registerItem("cocoa_powder", COCOA_POWDER);
+
         registerItem("silicon_dust", SILICON_DUST);
         registerItem("silicon_mold", SILICON_MOLD);
-        registerItem("all_purpose_filter", ALL_PURPOSE_FILTER);
         registerItem("manual_food_grinder", MANUAL_FOOD_GRINDER);
 
         registerItem("dark_chocolate", DARK_CHOCOLATE);
@@ -114,13 +121,16 @@ public class ItemRegistry {
         registerItem("dark_chocolate_covered_apple", DARK_CHOCOLATE_COVERED_APPLE);
         registerItem("milk_chocolate_covered_apple", MILK_CHOCOLATE_COVERED_APPLE);
         registerItem("white_chocolate_covered_apple", WHITE_CHOCOLATE_COVERED_APPLE);
+        registerItem("white_chips_cookie",WHITE_CHIPS_COOKIE);
+        registerItem("white_chips_chocolate_cookie",WHITE_CHIPS_CHOCOLATE_COOKIE);
+        registerItem("dark_chips_chocolate_cookie",DARK_CHIPS_CHOCOLATE_COOKIE);
         registerItem("nutella", NUTELLA);
     }
 
+    public static List<ItemStack> ITEM_LIST = new ArrayList<>();
     private static Item registerItem(String itemName, Item item) {
         Registry.register(Registry.ITEM, CroptopiaChocolaterie.createIdentifier(itemName), item);
         ITEM_LIST.add(new ItemStack(item));
         return item;
     }
-    public static List<ItemStack> ITEM_LIST = new ArrayList<>();
 }
