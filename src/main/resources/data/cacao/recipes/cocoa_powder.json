@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "cacao:manual_grinder"
+      "item": "cacao:manual_food_grinder"
     },
     {
       "item": "cacao:pressed_cocoa_cone"

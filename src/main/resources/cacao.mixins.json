@@ -1,9 +1,10 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "",
+  "package": "com.slomaxonical.croptopia.chocolaterie.mixin",
   "compatibilityLevel": "JAVA_16",
   "mixins": [
+    "CandleCakeRedirect"
   ],
   "client": [
   ],

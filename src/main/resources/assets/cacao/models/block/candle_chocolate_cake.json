@@ -1,7 +1,7 @@
 {
-  "parent": "cacao:block/template_cake_with_candle",
+  "parent": "minecraft:block/template_cake_with_candle",
   "textures": {
-    "candle": "cacao:block/candle",
+    "candle": "minecraft:block/candle",
     "bottom": "cacao:block/chocolate_cake_bottom",
     "side": "cacao:block/chocolate_cake_side",
     "top": "cacao:block/chocolate_cake_top",
