@@ -1,27 +1,22 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    " 1 ",
-    "324",
-    " 5 "
-  ],
-  "key": {
-    "1": {
-      "item": "minecraft:egg"
-    },
-    "2": {
-      "item": "cacao:milk_chocolate"
-    },
-    "3": {
-      "tag": "c:milk_bottles"
-    },
-    "4": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
       "item": "minecraft:sugar"
     },
-    "5": {
+    {
+      "item": "cacao:milk_chocolate"
+    },
+    {
+      "tag": "c:milk_bottles"
+    },
+    {
+      "item": "minecraft:egg"
+    },
+    {
       "item": "croptopia:cooking_pot"
     }
-  },
+  ],
   "result": {
     "item": "croptopia:chocolate_ice_cream",
     "count": 1

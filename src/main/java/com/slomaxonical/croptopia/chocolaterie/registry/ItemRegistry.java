@@ -16,19 +16,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ItemRegistry {
-
     public static final Item CACAO_NIBS = new Item(createGroup());
     public static final Item CACAO_MASS_BUCKET = new Item(createGroup().recipeRemainder(Items.BUCKET));
     public static final Item CACAO_MASS_BOTTLE = new Item(createGroup());
     public static final Item CACAO_BUTTER_BOTTLE = new Item(createGroup());
 
+    public static final Item PRESSED_COCOA_CONE = new Item(createGroup());
+    public static final Item FILTER_CLOTH = new Item(createGroup());
+    public static final Item CACAO_MASS_FILLED_CLOTH = new Item(createGroup().maxCount(1).recipeRemainder(PRESSED_COCOA_CONE));
+    public static final Item COCOA_POWDER = new Item(createGroup());
     public static final Item SILICON_DUST = new Item(createGroup());
     public static final CookingUtensil SILICON_MOLD = new CookingUtensil(createGroup().maxCount(1));
     public static final CookingUtensil MANUAL_FOOD_GRINDER = new CookingUtensil(createGroup().maxCount(1));
-    public static final Item FILTER_CLOTH = new Item(createGroup());
-    public static final Item PRESSED_COCOA_CONE = new Item(createGroup());
-    public static final Item CACAO_MASS_FILLED_CLOTH = new Item(createGroup().maxCount(1).recipeRemainder(PRESSED_COCOA_CONE));
-    public static final Item COCOA_POWDER = new Item(createGroup());
 
     public static final Item DARK_CHOCOLATE = new Item(createGroup().food(FoodRegistry.EDIBLE_3));
     public static final Item CARAMEL_DARK_CHOCOLATE = new Item(createGroup().food(FoodRegistry.EDIBLE_5));
@@ -58,8 +57,8 @@ public class ItemRegistry {
     public static final Item PEANUT_BUTTER_WHITE_CHOCOLATE = new Item(createGroup().food(FoodRegistry.EDIBLE_7));
 
     public static final Item GOLDEN_CHOCOLATE = new Item(createGroup().food(new FoodComponent.Builder()
-            .hunger(5).
-            saturationModifier(0.75f)
+            .hunger(5)
+            .saturationModifier(0.75f)
             .statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 400, 1), 1.0f)
             .statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 1200, 1), 0.65f)
             .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 120, 2), 0.8f)
@@ -88,7 +87,7 @@ public class ItemRegistry {
 
         registerItem("silicon_dust", SILICON_DUST);
         registerItem("silicon_mold", SILICON_MOLD);
-        registerItem("manual_food_grinder", MANUAL_FOOD_GRINDER);
+            registerItem("manual_food_grinder", MANUAL_FOOD_GRINDER);
 
         registerItem("dark_chocolate", DARK_CHOCOLATE);
         registerItem("caramel_dark_chocolate", CARAMEL_DARK_CHOCOLATE);

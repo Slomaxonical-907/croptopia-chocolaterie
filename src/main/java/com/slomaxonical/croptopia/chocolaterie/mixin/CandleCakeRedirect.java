@@ -20,7 +20,6 @@ public class CandleCakeRedirect {
     @Redirect(method = "<init>", at = @At(value = "INVOKE", target = "Ljava/util/Map;put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"))
     private Object redirect(Map<Block,CandleCakeBlock> map, Object candle, Object candleCake){
         if (!(candleCake instanceof CandleChocolateCakeBlock)) {
-            System.out.println("puting: " + candleCake);
             return CANDLES_TO_CANDLE_CAKES.put((Block) candle, (CandleCakeBlock) candleCake);
         }
         return null;
