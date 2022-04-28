@@ -37,7 +37,7 @@ public class BlockRegistry {
         return (state) -> (Boolean)state.get(Properties.LIT) ? litLevel : 0;
     }
     public static void init(){
-        registerBlock("chocolate_cake", CHOCOLATE_CAKE,false);
+        registerBlock("chocolate_cake", CHOCOLATE_CAKE,true);
         registerBlock("candle_chocolate_cake", CANDLE_CHOCOLATE_CAKE);
         registerBlock("black_candle_chocolate_cake", BLACK_CANDLE_CHOCOLATE_CAKE);
         registerBlock("gray_candle_chocolate_cake", GRAY_CANDLE_CHOCOLATE_CAKE);
@@ -58,12 +58,12 @@ public class BlockRegistry {
     }
 
     public static Block registerBlock(String blockName, Block block) {
-        return registerBlock(blockName, block,true);
+        return registerBlock(blockName, block,false);
 
     }
-    public static Block registerBlock(String blockName, Block block, boolean noItem){
+    public static Block registerBlock(String blockName, Block block, boolean withItem){
        Block registeredBlock = Registry.register(Registry.BLOCK, CroptopiaChocolaterie.createIdentifier(blockName),block);
-       if (!noItem) {
+       if (withItem) {
            BlockItem blockItem = new BlockItem(block, new FabricItemSettings().group(CroptopiaChocolaterie.CACAO_ITEM_GROUP));
            Registry.register(Registry.ITEM, CroptopiaChocolaterie.createIdentifier(blockName), blockItem);
        }
