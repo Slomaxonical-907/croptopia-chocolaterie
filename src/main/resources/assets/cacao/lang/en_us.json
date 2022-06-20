@@ -44,5 +44,9 @@
   "item.cacao.nutella" : "Nutella",
 
   "block.cacao.chocolate_cake" : "Chocolate Cake",
-  "itemGroup.cacao.item_group" : "Croptopia's Chocclaterie"
+  "itemGroup.cacao.item_group" : "Croptopia's Chocclaterie",
+
+  "__comment__": "Emi Tags",
+  "tag.cacao.cookies": "Cookies",
+  "tag.c.chocolates": "Chocolate"
 }

@@ -1,7 +1,7 @@
 package com.slomaxonical.croptopia.chocolaterie.registry;
 
-import com.slomaxonical.croptopia.chocolaterie.Blocks.ChocolateCakeBlock;
 import com.slomaxonical.croptopia.chocolaterie.Blocks.CandleChocolateCakeBlock;
+import com.slomaxonical.croptopia.chocolaterie.Blocks.ChocolateCakeBlock;
 import com.slomaxonical.croptopia.chocolaterie.CroptopiaChocolaterie;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;

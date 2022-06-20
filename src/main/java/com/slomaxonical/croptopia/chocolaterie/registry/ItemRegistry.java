@@ -1,8 +1,8 @@
 package com.slomaxonical.croptopia.chocolaterie.registry;
 
-import com.epherical.croptopia.items.CookingUtensil;
-import com.epherical.croptopia.util.FoodConstructor;
 import com.slomaxonical.croptopia.chocolaterie.CroptopiaChocolaterie;
+import com.slomaxonical.croptopia.chocolaterie.util.CookingUtensil;
+import com.slomaxonical.croptopia.chocolaterie.util.FoodComponents;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -29,32 +29,32 @@ public class ItemRegistry {
     public static final CookingUtensil SILICON_MOLD = new CookingUtensil(createGroup().maxCount(1));
     public static final CookingUtensil MANUAL_FOOD_GRINDER = new CookingUtensil(createGroup().maxCount(1));
 
-    public static final Item DARK_CHOCOLATE = new Item(createGroup().food(FoodConstructor.createFood(FoodConstructor.REG_3)));
-    public static final Item CARAMEL_DARK_CHOCOLATE = new Item(createGroup().food(FoodConstructor.createFood(FoodConstructor.REG_5)));
-    public static final Item PRALINE_DARK_CHOCOLATE = new Item(createGroup().food(FoodConstructor.createFood(FoodConstructor.REG_3)));
-    public static final Item STRAWBERRY_CREAM_DARK_CHOCOLATE = new Item(createGroup().food(FoodConstructor.createFood(FoodConstructor.REG_3)));
-    public static final Item COOKIE_CREAM_DARK_CHOCOLATE = new Item(createGroup().food(FoodConstructor.createFood(FoodConstructor.REG_3)));
-    public static final Item MIXED_NUTS_DARK_CHOCOLATE = new Item(createGroup().food(FoodConstructor.createFood(FoodConstructor.REG_3)));
-    public static final Item COCONUT_DARK_CHOCOLATE = new Item(createGroup().food(FoodConstructor.createFood(FoodConstructor.REG_3)));
-    public static final Item PEANUT_BUTTER_DARK_CHOCOLATE = new Item(createGroup().food(FoodConstructor.createFood(FoodConstructor.REG_3)));
+    public static final Item DARK_CHOCOLATE = new Item(createGroup().food(FoodComponents.DARK_CHOCOLATE));
+    public static final Item CARAMEL_DARK_CHOCOLATE = new Item(createGroup().food(FoodComponents.FILLED_DARK_CHOCOLATE));
+    public static final Item PRALINE_DARK_CHOCOLATE = new Item(createGroup().food(FoodComponents.FILLED_DARK_CHOCOLATE));
+    public static final Item STRAWBERRY_CREAM_DARK_CHOCOLATE = new Item(createGroup().food(FoodComponents.FILLED_DARK_CHOCOLATE));
+    public static final Item COOKIE_CREAM_DARK_CHOCOLATE = new Item(createGroup().food(FoodComponents.FILLED_DARK_CHOCOLATE));
+    public static final Item MIXED_NUTS_DARK_CHOCOLATE = new Item(createGroup().food(FoodComponents.FILLED_DARK_CHOCOLATE));
+    public static final Item COCONUT_DARK_CHOCOLATE = new Item(createGroup().food(FoodComponents.FILLED_DARK_CHOCOLATE));
+    public static final Item PEANUT_BUTTER_DARK_CHOCOLATE = new Item(createGroup().food(FoodComponents.FILLED_DARK_CHOCOLATE));
 
-    public static final Item MILK_CHOCOLATE = new Item(createGroup().food(FoodConstructor.createFood(FoodConstructor.REG_5)));
-    public static final Item CARAMEL_MILK_CHOCOLATE = new Item(createGroup().food(FoodConstructor.createFood(FoodConstructor.REG_7)));
-    public static final Item PRALINE_MILK_CHOCOLATE = new Item(createGroup().food(FoodConstructor.createFood(FoodConstructor.REG_5)));
-    public static final Item STRAWBERRY_CREAM_MILK_CHOCOLATE = new Item(createGroup().food(FoodConstructor.createFood(FoodConstructor.REG_5)));
-    public static final Item COOKIE_CREAM_MILK_CHOCOLATE = new Item(createGroup().food(FoodConstructor.createFood(FoodConstructor.REG_5)));
-    public static final Item MIXED_NUTS_MILK_CHOCOLATE = new Item(createGroup().food(FoodConstructor.createFood(FoodConstructor.REG_5)));
-    public static final Item COCONUT_MILK_CHOCOLATE = new Item(createGroup().food(FoodConstructor.createFood(FoodConstructor.REG_5)));
-    public static final Item PEANUT_BUTTER_MILK_CHOCOLATE = new Item(createGroup().food(FoodConstructor.createFood(FoodConstructor.REG_5)));
+    public static final Item MILK_CHOCOLATE = new Item(createGroup().food(FoodComponents.MILK_CHOCOLATE));
+    public static final Item CARAMEL_MILK_CHOCOLATE = new Item(createGroup().food(FoodComponents.FILLED_MILK_CHOCOLATE));
+    public static final Item PRALINE_MILK_CHOCOLATE = new Item(createGroup().food(FoodComponents.FILLED_MILK_CHOCOLATE));
+    public static final Item STRAWBERRY_CREAM_MILK_CHOCOLATE = new Item(createGroup().food(FoodComponents.FILLED_MILK_CHOCOLATE));
+    public static final Item COOKIE_CREAM_MILK_CHOCOLATE = new Item(createGroup().food(FoodComponents.FILLED_MILK_CHOCOLATE));
+    public static final Item MIXED_NUTS_MILK_CHOCOLATE = new Item(createGroup().food(FoodComponents.FILLED_MILK_CHOCOLATE));
+    public static final Item COCONUT_MILK_CHOCOLATE = new Item(createGroup().food(FoodComponents.FILLED_MILK_CHOCOLATE));
+    public static final Item PEANUT_BUTTER_MILK_CHOCOLATE = new Item(createGroup().food(FoodComponents.FILLED_MILK_CHOCOLATE));
 
-    public static final Item WHITE_CHOCOLATE = new Item(createGroup().food(FoodConstructor.createFood(FoodConstructor.REG_7)));
-    public static final Item CARAMEL_WHITE_CHOCOLATE = new Item(createGroup().food(FoodConstructor.createFood(FoodConstructor.REG_9)));
-    public static final Item PRALINE_WHITE_CHOCOLATE = new Item(createGroup().food(FoodConstructor.createFood(FoodConstructor.REG_7)));
-    public static final Item STRAWBERRY_CREAM_WHITE_CHOCOLATE = new Item(createGroup().food(FoodConstructor.createFood(FoodConstructor.REG_7)));
-    public static final Item COOKIE_CREAM_WHITE_CHOCOLATE = new Item(createGroup().food(FoodConstructor.createFood(FoodConstructor.REG_7)));
-    public static final Item MIXED_NUTS_WHITE_CHOCOLATE = new Item(createGroup().food(FoodConstructor.createFood(FoodConstructor.REG_7)));
-    public static final Item COCONUT_WHITE_CHOCOLATE = new Item(createGroup().food(FoodConstructor.createFood(FoodConstructor.REG_7)));
-    public static final Item PEANUT_BUTTER_WHITE_CHOCOLATE = new Item(createGroup().food(FoodConstructor.createFood(FoodConstructor.REG_7)));
+    public static final Item WHITE_CHOCOLATE = new Item(createGroup().food(FoodComponents.WHITE_CHOCOLATE));
+    public static final Item CARAMEL_WHITE_CHOCOLATE = new Item(createGroup().food(FoodComponents.FILLED_WHITE_CHOCOLATE));
+    public static final Item PRALINE_WHITE_CHOCOLATE = new Item(createGroup().food(FoodComponents.FILLED_WHITE_CHOCOLATE));
+    public static final Item STRAWBERRY_CREAM_WHITE_CHOCOLATE = new Item(createGroup().food(FoodComponents.FILLED_WHITE_CHOCOLATE));
+    public static final Item COOKIE_CREAM_WHITE_CHOCOLATE = new Item(createGroup().food(FoodComponents.FILLED_WHITE_CHOCOLATE));
+    public static final Item MIXED_NUTS_WHITE_CHOCOLATE = new Item(createGroup().food(FoodComponents.FILLED_WHITE_CHOCOLATE));
+    public static final Item COCONUT_WHITE_CHOCOLATE = new Item(createGroup().food(FoodComponents.FILLED_WHITE_CHOCOLATE));
+    public static final Item PEANUT_BUTTER_WHITE_CHOCOLATE = new Item(createGroup().food(FoodComponents.FILLED_WHITE_CHOCOLATE));
 
     public static final Item GOLDEN_CHOCOLATE = new Item(createGroup().food(new FoodComponent.Builder()
             .hunger(5)
@@ -64,13 +64,14 @@ public class ItemRegistry {
             .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 120, 2), 0.8f)
             .alwaysEdible()
             .build()));
-    public static final Item DARK_CHOCOLATE_COVERED_APPLE = new Item(createGroup().food(FoodConstructor.createFood(FoodConstructor.REG_5)));
-    public static final Item MILK_CHOCOLATE_COVERED_APPLE = new Item(createGroup().food(FoodConstructor.createFood(FoodConstructor.REG_7)));
-    public static final Item WHITE_CHOCOLATE_COVERED_APPLE = new Item(createGroup().food(FoodConstructor.createFood(FoodConstructor.REG_7)));
-    public static final Item WHITE_CHIPS_COOKIE = new Item(createGroup().food(FoodConstructor.createFood(FoodConstructor.REG_5)));
-    public static final Item WHITE_CHIPS_CHOCOLATE_COOKIE = new Item(createGroup().food(FoodConstructor.createFood(FoodConstructor.REG_5)));
-    public static final Item DARK_CHIPS_CHOCOLATE_COOKIE = new Item(createGroup().food(FoodConstructor.createFood(FoodConstructor.REG_5)));
-    public static final Item NUTELLA = new Item(createGroup().food(FoodConstructor.createFood(FoodConstructor.REG_9)));
+    public static final Item DARK_CHOCOLATE_COVERED_APPLE = new Item(createGroup().food(FoodComponents.FILLED_DARK_CHOCOLATE));
+    public static final Item MILK_CHOCOLATE_COVERED_APPLE = new Item(createGroup().food(FoodComponents.FILLED_MILK_CHOCOLATE));
+    public static final Item WHITE_CHOCOLATE_COVERED_APPLE = new Item(createGroup().food(FoodComponents.FILLED_WHITE_CHOCOLATE));
+    
+    public static final Item WHITE_CHIPS_COOKIE = new Item(createGroup().food(net.minecraft.item.FoodComponents.COOKIE));
+    public static final Item WHITE_CHIPS_CHOCOLATE_COOKIE = new Item(createGroup().food(net.minecraft.item.FoodComponents.COOKIE));
+    public static final Item DARK_CHIPS_CHOCOLATE_COOKIE = new Item(createGroup().food(net.minecraft.item.FoodComponents.COOKIE));
+    public static final Item NUTELLA = new Item(createGroup().food(FoodComponents.NUTELLA));
 
     public static Item.Settings createGroup() {
         return new FabricItemSettings().group(CroptopiaChocolaterie.CACAO_ITEM_GROUP);

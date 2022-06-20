@@ -9,6 +9,7 @@ import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.util.Identifier;
 
 
@@ -16,7 +17,7 @@ public class CroptopiaChocolaterie implements ModInitializer {
 
     public static String MOD_ID = "cacao";
     public static final ItemGroup CACAO_ITEM_GROUP = FabricItemGroupBuilder.create(new Identifier(MOD_ID, "item_group"))
-            .icon(() -> new ItemStack(ItemRegistry.MILK_CHOCOLATE))
+            .icon(() -> new ItemStack(Items.SOUL_SAND))
             .build();
     public static Identifier createIdentifier(String name) {
         return new Identifier(MOD_ID, name);
