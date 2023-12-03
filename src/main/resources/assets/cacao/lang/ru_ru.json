@@ -42,6 +42,11 @@
   "item.cacao.white_chips_chocolate_cookie": "Шоколадное печенье с белошоколадной крошкой",
   "item.cacao.dark_chips_chocolate_cookie": "Шоколадное печенье с тёмношоколадной крошкой",
   "item.cacao.nutella": "Нутелла",
+  
   "block.cacao.chocolate_cake": "Шоколадный торт",
   "itemGroup.cacao": "Croptopia Шоколатье"
+ 
+ "__comment__": "EMI Теги",
+  "tag.cacao.cookies": "Печенье",
+  "tag.c.chocolates": "Шоколад"
 }
